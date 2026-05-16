@@ -1,52 +1,45 @@
-import { useEffect } from "react";
+import React from "react";
 import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import Scene from "./components/Scene";
+import JourneyMap from "./components/JourneyMap";
+import Archive from "./components/Archive";
+import JeholGallery from "./components/JeholGallery";
+import Timeline from "./components/Timeline";
+import Epilogue from "./components/Epilogue";
+import { SCENES } from "./data/scenes";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <div className="App" id="top">
+      <Nav />
+      <Hero />
+
+      {/* Scene narrative */}
+      <main>
+        {SCENES.slice(0, 3).map((s, i) => (
+          <Scene scene={s} index={i} key={s.id} />
+        ))}
+
+        <JourneyMap />
+
+        {SCENES.slice(3).map((s, i) => (
+          <Scene scene={s} index={i + 3} key={s.id} />
+        ))}
+
+        <JeholGallery />
+        <Archive />
+        <Timeline />
+        <Epilogue />
+      </main>
+
+      <footer className="bg-[var(--ink-1)] text-[var(--paper-2)] py-12 text-center">
+        <div className="font-accent text-[10px] tracking-[0.4em] text-[var(--cinnabar)]">DIARIO DI MATTEO RIPA · 1682 — 1746</div>
+        <div className="font-quill italic text-sm mt-3 text-[var(--paper-2)]/70">
+          Storytelling autobiografico · Fonti: Giornale, Bolla «Nuper pro», Archivio del Collegio dei Cinesi
+        </div>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,151 @@
+// Narrative data — testi del diario di Matteo Ripa
+
+export const SCENES = [
+  {
+    id: "scena-1",
+    number: "I",
+    date: "26 novembre 1705",
+    place: "Napoli — Roma",
+    title: "Il Segno e il Distacco",
+    image: "/sources/donegal.png",
+    imageAlt: "Pagina autografa del Giornale di Matteo Ripa",
+    imageCaption: "Pagina autografa dal Giornale di bordo (Archivio del Collegio dei Cinesi).",
+    body: `Lascio Napoli nel silenzio più profondo. Mio padre e i miei fratelli ignorano la mia "pazzia". A Rieti, un serpente verde è caduto dal soffitto sfiorandomi il volto: per molti un presagio, per me la conferma che Dio mi chiamava in Cina. Parto a piedi, mendicando il vitto, con l'animo di un anacoreta e il cuore rivolto all'Oriente.`,
+    audioText: `26 novembre 1705. Lascio Napoli nel silenzio più profondo. Mio padre e i miei fratelli ignorano la mia pazzia. A Rieti, un serpente verde è caduto dal soffitto sfiorandomi il volto: per molti un presagio, per me la conferma che Dio mi chiamava in Cina. Parto a piedi, mendicando il vitto, con l'animo di un anacoreta e il cuore rivolto all'Oriente.`,
+  },
+  {
+    id: "scena-2",
+    number: "II",
+    date: "Giugno 1708",
+    place: "Vascello Donegal — Oceano",
+    title: "L'Oceano e l'Occhio dell'Artista",
+    image: "/sources/donegal.png",
+    imageAlt: "Disegni dal diario di bordo del vascello Donegal",
+    imageCaption: "Disegni autografi dal diario di bordo del vascello Donegal.",
+    body: `Dieci mesi richiuso sul Donegal. Il mare è una prigione, ma la curiosità è la mia libertà. Per non soccombere alla noia e allo scorbuto, il mio bulino corre instancabile. Disegno creature mai viste — il calamaro "squit", il pescecane "sciach" — misuro i gradi di latitudine con la balestra. In ogni linea del creato, cerco di scorgere la perfezione del Grande Architetto.`,
+    audioText: `Giugno 1708. Dieci mesi richiuso sul Donegal. Il mare è una prigione, ma la curiosità è la mia libertà. Per non soccombere alla noia e allo scorbuto, il mio bulino corre instancabile. Disegno creature mai viste, misuro i gradi di latitudine con la balestra. In ogni linea del creato, cerco di scorgere la perfezione del Grande Architetto.`,
+  },
+  {
+    id: "scena-3",
+    number: "III",
+    date: "Febbraio 1711",
+    place: "Pechino — Corte di Kangxi",
+    title: "Un Napoletano alla Corte del Dragone",
+    image: "/sources/mappa_cina.png",
+    imageAlt: "Dettaglio della Grande Mappa dell'Impero di Cina — Provincia di Sciantung",
+    imageCaption: "Dettaglio della Grande Mappa dell'Impero (Tav. su Sciantung, tomba di Confucio).",
+    body: `Arrivo a Pechino. L'Imperatore Kangxi non cerca le mie preghiere, ma la mia mano. Gli mostro l'incisione su rame, tecnica europea che lo sbalordisce. Divento il suo pittore, incido le ninfee di Jehol e una mappa immensa in 44 tavole per misurare il suo impero. Ma tra lo sfarzo, il mio pensiero corre ai giovani cinesi: voglio portarli a Napoli per farne i mediatori di domani.`,
+    audioText: `Febbraio 1711. Arrivo a Pechino. L'Imperatore Kangxi non cerca le mie preghiere, ma la mia mano. Gli mostro l'incisione su rame, tecnica europea che lo sbalordisce. Divento il suo pittore, incido le ninfee di Jehol e una mappa immensa in quarantaquattro tavole per misurare il suo impero. Ma tra lo sfarzo, il mio pensiero corre ai giovani cinesi: voglio portarli a Napoli per farne i mediatori di domani.`,
+  },
+  {
+    id: "scena-4",
+    number: "IV",
+    date: "Gennaio 1724",
+    place: "Pechino — Londra — Napoli",
+    title: "La Fuga e la Promessa",
+    image: "/sources/passaporto.png",
+    imageAlt: "Passaporto cinese di Matteo Ripa",
+    imageCaption: "Passaporto rilasciato dal Bing Bu (Ministero della Guerra), 1724.",
+    body: `Lascio la Cina. È una scelta "contro coscienza", quasi una fuga. Porto con me quattro ragazzi — Giovanni Battista Gu, Giovanni Evangelista Yin, Filippo Huang, Lucio Wu — e il loro maestro Wang. A Londra, devo donare la mia mappa a Re Giorgio I per salvare i bagagli dai doganieri. Il 20 novembre, finalmente, rivedo il porto di Napoli. L'utopia comincia ora.`,
+    audioText: `Gennaio 1724. Lascio la Cina. È una scelta contro coscienza, quasi una fuga. Porto con me quattro ragazzi e il loro maestro. A Londra, devo donare la mia mappa a Re Giorgio I per salvare i bagagli dai doganieri. Il venti novembre, finalmente, rivedo il porto di Napoli. L'utopia comincia ora.`,
+  },
+  {
+    id: "scena-5",
+    number: "V",
+    date: "7 aprile 1732",
+    place: "Napoli — Montagnola",
+    title: "La Nascita del Collegio",
+    image: "/sources/stemma.png",
+    imageAlt: "Stemma del Collegio dei Cinesi",
+    imageCaption: "Stemma del Collegio dei Cinesi: angeli che sorreggono il globo. «Volo ut accedatur».",
+    body: `Napoli e Roma mi guardano con sospetto. Ma io non cerco un monastero, cerco un ponte. Il 7 aprile 1732, con la grazia di Papa Clemente XII e la bolla "Nuper pro", nasce ufficialmente il Collegio dei Cinesi. Sulla collina della Montagnola, lavo i piedi ai miei allievi: non sono un superiore, sono un servitore del dialogo tra i mondi.`,
+    audioText: `Napoli e Roma mi guardano con sospetto. Ma io non cerco un monastero, cerco un ponte. Il sette aprile 1732, con la grazia di Papa Clemente XII, nasce ufficialmente il Collegio dei Cinesi. Sulla collina della Montagnola, lavo i piedi ai miei allievi: non sono un superiore, sono un servitore del dialogo tra i mondi.`,
+  },
+  {
+    id: "scena-6",
+    number: "VI",
+    date: "29 marzo 1746",
+    place: "Napoli — Palazzo Corigliano",
+    title: "L'Eredità Immortale",
+    image: "/sources/stemma.png",
+    imageAlt: "Lapide e Palazzo Corigliano oggi",
+    imageCaption: "«Hic jacet corpus Matthaei Ripae» — l'eredità che oggi vive a Palazzo Corigliano.",
+    body: `Il 29 marzo 1746, nel giorno del mio compleanno, lascio questa terra. Il mio Collegio muterà nome — Real Collegio Asiatico, poi Istituto Orientale — ma il bulino che ha inciso quella mappa continua a tracciare rotte. Il ponte che ho sognato vive oggi in voi, in ogni parola cinese che pronunciate tra queste mura.`,
+    audioText: `Il 29 marzo 1746, nel giorno del mio compleanno, lascio questa terra. Il mio Collegio muterà nome, Real Collegio Asiatico, poi Istituto Orientale, ma il bulino che ha inciso quella mappa continua a tracciare rotte. Il ponte che ho sognato vive oggi in voi, in ogni parola cinese che pronunciate tra queste mura.`,
+  },
+];
+
+export const JOURNEY_STOPS = [
+  { id: "napoli-1", name: "Napoli", year: "26 nov 1705", coords: [40.8518, 14.2681], note: "Partenza notturna, in silenzio. La vocazione." },
+  { id: "roma", name: "Roma", year: "1706", coords: [41.9028, 12.4964], note: "Propaganda Fide. L'ordinazione e la missione." },
+  { id: "londra-1", name: "Londra", year: "1707", coords: [51.5074, -0.1278], note: "Imbarco sul vascello Donegal della Compagnia delle Indie." },
+  { id: "capo", name: "Capo di Buona Speranza", year: "1708", coords: [-34.3568, 18.4740], note: "La rotta del sud, veduta dalla poppa." },
+  { id: "macao", name: "Macao", year: "1710", coords: [22.1987, 113.5439], note: "Approdo in Cina dopo dieci mesi di mare." },
+  { id: "pechino", name: "Pechino", year: "Feb 1711", coords: [39.9042, 116.4074], note: "Corte di Kangxi. Pittore, incisore, mappatore." },
+  { id: "jehol", name: "Jehol (Chengde)", year: "1713", coords: [40.9710, 117.9398], note: "Le 36 vedute della villa imperiale." },
+  { id: "canton", name: "Canton (Guangzhou)", year: "Gen 1724", coords: [23.1291, 113.2644], note: "Partenza con i quattro giovani cinesi." },
+  { id: "londra-2", name: "Londra", year: "1724", coords: [51.5074, -0.1278], note: "Dono della mappa a Re Giorgio I." },
+  { id: "napoli-2", name: "Napoli", year: "20 nov 1724", coords: [40.8518, 14.2681], note: "Il ritorno. L'utopia comincia." },
+];
+
+export const ARCHIVE_SOURCES = [
+  {
+    id: "passaporto",
+    title: "Passaporto cinese (Bing Bu)",
+    year: "Yongzheng I — 1723",
+    image: "/sources/passaporto.png",
+    description: "Documento di viaggio rilasciato a Ripa dal Ministero della Guerra dell'Impero Qing, recante sigilli vermigli e annotazioni in cinese e mancese.",
+  },
+  {
+    id: "stemma",
+    title: "Stemma del Collegio dei Cinesi",
+    year: "1732",
+    image: "/sources/stemma.png",
+    description: "Emblema con due angeli che sorreggono un globo, il motto «Volo ut accedatur — Universum mundum praedicate Evangelium» e i caratteri cinesi 聖家 (Sacra Famiglia).",
+  },
+  {
+    id: "donegal",
+    title: "Pagina del Giornale — vascello Donegal",
+    year: "1708",
+    image: "/sources/donegal.png",
+    description: "Folio autografo del Giornale: annotazioni di rotta, disegni del sartiame e dei pesci osservati durante la traversata.",
+  },
+  {
+    id: "mappa",
+    title: "Mappa dell'Impero — Provincia di Sciantung",
+    year: "1717",
+    image: "/sources/mappa_cina.png",
+    description: "Dettaglio dall'incisione su rame della Grande Mappa dell'Impero in 44 tavole: zoom sulla tomba di Confucio (Qufu).",
+  },
+];
+
+// 36 vedute di Jehol — generate paths dynamically
+export const JEHOL_VIEWS = Array.from({ length: 36 }, (_, i) => ({
+  id: `veduta-${i + 1}`,
+  number: i + 1,
+  image: `/jehol/veduta_${String(i + 1).padStart(2, "0")}.png`,
+  title: `Veduta ${i + 1}`,
+}));
+
+// Titles inspired by historical names of Jehol views (first 16 + generic for rest)
+const JEHOL_TITLES = [
+  "Villa Imperiale di Gehol",
+  "Acqua limpida di sorgente",
+  "Sole su bellissime ninfee",
+  "Via simile alla famosa erba ji",
+  "Monte pendente che guarda giù",
+  "Acqua di fiume e nubi sui monti",
+  "Vista di pesci alla scogliera",
+  "Cielo sereno e tempio degli idoli",
+  "Pini sussurranti al vento",
+  "Padiglione fra le rocce",
+  "Lago di loto in fiore",
+  "Ponte di pietra sul ruscello",
+  "Eremo dei monaci taoisti",
+  "Cascata fra le pareti",
+  "Tempio della pace eterna",
+  "Sentiero dei cervi sacri",
+];
+JEHOL_VIEWS.forEach((v, i) => {
+  if (JEHOL_TITLES[i]) v.title = JEHOL_TITLES[i];
+});
