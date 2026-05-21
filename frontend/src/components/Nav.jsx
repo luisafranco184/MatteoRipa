@@ -25,7 +25,7 @@ export default function Nav() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
-        <a href="#top" data-testid="nav-logo" className={`font-headings text-xl md:text-2xl tracking-tight ${scrolled ? "text-[var(--ink-1)]" : "text-[var(--paper-1)]"}`}>
+        <a href="#top" data-testid="nav-logo" className={`font-headings text-xl md:text-2xl tracking-tight ${scrolled ? "text-[var(--ink-1)]" : "text-white"}`}>
           M. Ripa <span className="font-accent text-[10px] ml-2 text-[var(--cinnabar)]">MDCCXXXII</span>
         </a>
         <ul className="hidden md:flex items-center gap-7">
@@ -35,7 +35,7 @@ export default function Nav() {
                 href={`#${l.id}`}
                 data-testid={`nav-link-${l.id}`}
                 className={`font-accent text-[10px] tracking-widest hover:text-[var(--cinnabar)] transition-colors ${
-                  scrolled ? "text-[var(--ink-2)]" : "text-[var(--paper-2)]/90"
+                  scrolled ? "text-[var(--ink-2)]" : "text-white"
                 }`}
               >
                 {l.label}

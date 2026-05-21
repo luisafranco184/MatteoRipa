@@ -12,7 +12,7 @@ export default function JeholGallery() {
         <div className="mb-14 max-w-3xl">
           <div className="font-accent text-xs text-[var(--cinnabar)] mb-3">Iconografia · Pechino</div>
           <h2 className="font-headings text-4xl md:text-6xl leading-tight">
-            Le 36 Vedute della Villa Imperiale di Jehol
+            Le Vedute della Villa Imperiale di Jehol
           </h2>
           <p className="font-quill italic text-lg text-[var(--ink-2)] mt-4 leading-relaxed">
             «Per ordine dell'Imperatore Kangxi, incisi su rame le trentasei vedute del suo ritiro estivo in Tartaria. Ogni veduta è un soffio del paradiso che lo circondava.»

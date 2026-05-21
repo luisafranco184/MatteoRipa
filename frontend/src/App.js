@@ -18,17 +18,12 @@ function App() {
 
       {/* Scene narrative */}
       <main>
-        {SCENES.slice(0, 3).map((s, i) => (
+        {SCENES.map((s, i) => (
           <Scene scene={s} index={i} key={s.id} />
         ))}
 
-        <JourneyMap />
-
-        {SCENES.slice(3).map((s, i) => (
-          <Scene scene={s} index={i + 3} key={s.id} />
-        ))}
-
         <JeholGallery />
+        <JourneyMap />
         <Archive />
         <Timeline />
         <Epilogue />

@@ -6,10 +6,10 @@ export const SCENES = [
     number: "I",
     date: "26 novembre 1705",
     place: "Napoli — Roma",
-    title: "Il Segno e il Distacco",
-    image: "/sources/donegal.png",
-    imageAlt: "Pagina autografa del Giornale di Matteo Ripa",
-    imageCaption: "Pagina autografa dal Giornale di bordo (Archivio del Collegio dei Cinesi).",
+    title: "L'inizio del viaggio",
+    image: "/sources/matteo_ripa.png",
+    imageAlt: "Ritratto di Matteo Ripa",
+    imageCaption: "Ritratto litografico di Matteo Ripa (Archivio del Collegio dei Cinesi).",
     body: `Lascio Napoli nel silenzio più profondo. Mio padre e i miei fratelli ignorano la mia "pazzia". A Rieti, un serpente verde è caduto dal soffitto sfiorandomi il volto: per molti un presagio, per me la conferma che Dio mi chiamava in Cina. Parto a piedi, mendicando il vitto, con l'animo di un anacoreta e il cuore rivolto all'Oriente.`,
     audioText: `26 novembre 1705. Lascio Napoli nel silenzio più profondo. Mio padre e i miei fratelli ignorano la mia pazzia. A Rieti, un serpente verde è caduto dal soffitto sfiorandomi il volto: per molti un presagio, per me la conferma che Dio mi chiamava in Cina. Parto a piedi, mendicando il vitto, con l'animo di un anacoreta e il cuore rivolto all'Oriente.`,
   },
@@ -55,9 +55,9 @@ export const SCENES = [
     date: "7 aprile 1732",
     place: "Napoli — Montagnola",
     title: "La Nascita del Collegio",
-    image: "/sources/stemma.png",
-    imageAlt: "Stemma del Collegio dei Cinesi",
-    imageCaption: "Stemma del Collegio dei Cinesi: angeli che sorreggono il globo. «Volo ut accedatur».",
+    image: "/sources/collegio.png",
+    imageAlt: "Palazzo del Collegio dei Cinesi a Napoli",
+    imageCaption: "Veduta del Collegio dei Cinesi sulla collina della Montagnola, Napoli.",
     body: `Napoli e Roma mi guardano con sospetto. Ma io non cerco un monastero, cerco un ponte. Il 7 aprile 1732, con la grazia di Papa Clemente XII e la bolla "Nuper pro", nasce ufficialmente il Collegio dei Cinesi. Sulla collina della Montagnola, lavo i piedi ai miei allievi: non sono un superiore, sono un servitore del dialogo tra i mondi.`,
     audioText: `Napoli e Roma mi guardano con sospetto. Ma io non cerco un monastero, cerco un ponte. Il sette aprile 1732, con la grazia di Papa Clemente XII, nasce ufficialmente il Collegio dei Cinesi. Sulla collina della Montagnola, lavo i piedi ai miei allievi: non sono un superiore, sono un servitore del dialogo tra i mondi.`,
   },
@@ -119,33 +119,11 @@ export const ARCHIVE_SOURCES = [
   },
 ];
 
-// 36 vedute di Jehol — generate paths dynamically
-export const JEHOL_VIEWS = Array.from({ length: 36 }, (_, i) => ({
-  id: `veduta-${i + 1}`,
-  number: i + 1,
-  image: `/jehol/veduta_${String(i + 1).padStart(2, "0")}.png`,
-  title: `Veduta ${i + 1}`,
-}));
-
-// Titles inspired by historical names of Jehol views (first 16 + generic for rest)
-const JEHOL_TITLES = [
-  "Villa Imperiale di Gehol",
-  "Acqua limpida di sorgente",
-  "Sole su bellissime ninfee",
-  "Via simile alla famosa erba ji",
-  "Monte pendente che guarda giù",
-  "Acqua di fiume e nubi sui monti",
-  "Vista di pesci alla scogliera",
-  "Cielo sereno e tempio degli idoli",
-  "Pini sussurranti al vento",
-  "Padiglione fra le rocce",
-  "Lago di loto in fiore",
-  "Ponte di pietra sul ruscello",
-  "Eremo dei monaci taoisti",
-  "Cascata fra le pareti",
-  "Tempio della pace eterna",
-  "Sentiero dei cervi sacri",
+// Vedute di Jehol — incisioni storiche selezionate
+export const JEHOL_VIEWS = [
+  { id: "veduta-1", number: 1, image: "/jehol_new/veduta_1.png", title: "Villa Imperiale di Gehol" },
+  { id: "veduta-2", number: 2, image: "/jehol_new/veduta_2.png", title: "Acqua limpida di sorgente" },
+  { id: "veduta-3", number: 3, image: "/jehol_new/veduta_3.png", title: "Sole su bellissime ninfee" },
+  { id: "veduta-4", number: 4, image: "/jehol_new/veduta_4.png", title: "Monte pendente che guarda giù" },
+  { id: "veduta-5", number: 5, image: "/jehol_new/veduta_5.png", title: "Cielo sereno e tempio degli idoli" },
 ];
-JEHOL_VIEWS.forEach((v, i) => {
-  if (JEHOL_TITLES[i]) v.title = JEHOL_TITLES[i];
-});

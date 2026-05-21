@@ -26,7 +26,7 @@ export default function Hero() {
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="max-w-3xl"
           >
-            <div className="font-accent text-xs md:text-sm text-[var(--paper-2)]/85 mb-6">
+            <div className="font-accent text-xs md:text-sm text-[var(--cinnabar)] mb-6">
               Napoli — 1705 / 1746 — Storytelling autobiografico
             </div>
             <h1 className="font-headings text-[var(--paper-1)] text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight">
@@ -36,7 +36,7 @@ export default function Hero() {
               </span>
               <span className="block font-accent text-[var(--cinnabar)] text-2xl md:text-3xl mt-6">MDCCXXXII · 1732</span>
             </h1>
-            <p className="font-quill italic text-[var(--paper-2)]/90 text-lg md:text-xl mt-8 max-w-2xl leading-relaxed">
+            <p className="font-quill italic text-white text-lg md:text-xl mt-8 max-w-2xl leading-relaxed" style={{textShadow: "0 2px 12px rgba(0,0,0,0.6)"}}>
               «Un napoletano alla corte del Dragone. Un bulino che incide mappe. Un ponte fra due mondi che, ancora oggi, continua a parlare cinese.»
             </p>
             <div className="mt-10 flex flex-wrap gap-6 items-center">
